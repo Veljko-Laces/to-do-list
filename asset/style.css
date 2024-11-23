@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 251, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 240px;
+    color: white;
+}
+
+h1{
+    font-family: "Indie Flower", cursive;
+    font-size: 54px;
+    letter-spacing: 14px;
+    color: #232323;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.task-input {
+    width: 100%;
+    border: 1px solid #232323;
+    border-radius: 7px 0 0 7px;
+    padding: 12px 8px;
+    outline: none;
+}
+
+.add-btn {
+    background-color: #232323; 
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid #232323;
+    border-radius: 0 7px 7px 0;
+}
+
+.todos {
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.todo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    border: 1px solid #232323;
+    background-color: #232323;
+    border-radius: 7px 7px 7px 7px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+
+.task-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn {
+    cursor: pointer;
+    padding: 12px;
+}
+
+.done {
+    text-decoration: line-through;
+}
